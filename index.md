@@ -6,7 +6,7 @@ I'm a crazy individual who loves to spend time with my family, leverage technolo
 
 That's my version of the "Hello World", a line used by many developers when getting started. Dan Turek taught Math and Computer Science at Burke High School and through some small, but impactful moments, helped shape my path in programming and technology.
 
-## The MVP of personal websites
+## The MVP of Personal Websites
 
 My vision for this site is to create a resource to help me process my thoughts and possibly help others.
 
