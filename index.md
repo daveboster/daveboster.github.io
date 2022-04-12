@@ -1,39 +1,15 @@
-## Welcome to GitHub Pages
+## Hello and Salutations!
 
-Hello Mr. Turek, I am here!
+I'm a crazy individual who loves to spend time with my family, leverage technology to help others, try some impossible things, and then see how much I can fit in 24 hours.
 
-You can use the [editor on GitHub](https://github.com/daveboster/daveboster.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+### Hello Mr. Turek, I am here!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+That's my version of the "Hello World", a line used by many developers when getting started. Dan Turek taught Math and Computer Science at Burke High School and through some small, but impactful moments, helped shape my path in programming and technology.
 
-### Markdown
+## The MVP of personal websites
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+My vision for this site is to create a resource to help me process my thoughts and possibly help others.
 
-```markdown
-Syntax highlighted code block
+I hope to explore the use of GitHub Pages as an effective tool for Software Developers to advocate for their public identity, to offer a tool to assist them with introspection, and to promote continual learning through an employer-agnostic repository of information.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/daveboster/daveboster.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+In the process of doing all of this, I'd like to improve my communication skills through the disciplined writing and management of a public website tied to my name. 😬
