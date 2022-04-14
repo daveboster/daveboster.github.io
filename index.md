@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Hi, I'm Dave, nice to meet you!"
 ---
 
