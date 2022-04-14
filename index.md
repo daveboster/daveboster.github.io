@@ -1,3 +1,7 @@
+layout: page
+title: "David Boster - Dream big..."
+---
+
 ## Hello and Salutations!
 
 I'm a crazy individual who loves to spend time with my family, leverage technology to help others, try some impossible things, and then see how much I can fit in 24 hours.
