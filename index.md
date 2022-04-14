@@ -1,5 +1,6 @@
+---
 layout: page
-title: "David Boster - Dream big..."
+title: "Hi, I'm Dave, nice to meet you!"
 ---
 
 ## Hello and Salutations!
