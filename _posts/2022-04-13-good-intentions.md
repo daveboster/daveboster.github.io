@@ -1,7 +1,6 @@
 ---
 layout: default
-title:  "Hi, I'm Dave!"
-tags: "GitHub Pages", "Jekyll Posts"
+title: "Hi, I'm Dave!"
 ---
 
 # Hi, I'm Dave, nice to meet you!
