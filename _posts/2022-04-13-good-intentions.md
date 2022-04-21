@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Hi, I'm Dave!"
 tags: github-pages jekyll-posts
 ---
