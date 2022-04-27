@@ -5,4 +5,6 @@ description: Dream big, just don't scare the hell out of everyone 🙂
 twitter_username: davidboster
 github_username: daveboster
 
-paginate: 1
+
+paginate: 6
+paginate_path: "/thoughts/page:num/"
