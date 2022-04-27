@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Hi, I'm Dave!"
-tags: github-pages jekyll-posts
+title: "Hi, I'm Dave, nice to meet you!"
+tags: github-pages jekyll-posts developer about-me
 ---
-
-# Hi, I'm Dave, nice to meet you!
 
 I'm a crazy individual who loves to spend time with my family, leverage technology to help others, try some impossible things, and then see how much I can fit in 24 hours.
 
