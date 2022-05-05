@@ -4,9 +4,7 @@ title: "Getting to know GitHub Pages"
 tags: github-pages jekyll-posts communication
 ---
 
-# Getting to know GitHub Pages
-
-In search of a method to work on communication and reflection, I’ve decided to investigate GitHub Websites. Writing journal entries is useful, however, I will usually end up using these as a dumping ground for links, thoughts, and pictures. Just by publishing these I will need to find a balance between efficiency and clarity.
+I’ve decided to investigate GitHub Websites in search of a method to work on communication and reflection. Writing journal entries is useful, however, I will usually end up using these as a dumping ground for links, thoughts, and pictures. Just by publishing these I will need to find a balance between efficiency and clarity.
 
 Though this attempt, I am hoping to accomplish the following objectives, in order of importance:
 1. Improve my communication skills by learning how to use written words to most efficiently describe:
