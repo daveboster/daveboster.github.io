@@ -25,7 +25,11 @@ After the first few steps and about ten clicks, here’s what I have found:
 - Encryption (HTTPS/SSL) is not enforced by default
 - There is no 3-click wizard to get me up and running
 
+![GitHub Pages Take 1](/assets/posts/github-site-take-1.png)
+
 After a bit more patience and completing the “Creating your website” section of the QuickStart, I have a nice looking website.
+
+![GitHub Pages Take 2](/assets/posts/github-site-take-2.png)
 
 Now comes the  hard part... what do I want to add for content? My first hour on this project has flown by, so content will need to be the topic for another day.  
 
