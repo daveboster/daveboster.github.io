@@ -2,6 +2,8 @@
 layout: thought
 title: "Extreme Programming Projects"
 tags: development-process extreme-programming build-pipelines
+start-date: 2022-11-18 17:00:00 CST
+version: 1
 ---
 
 A process for starting a greenfield or proof-of-concept project using the principles of Extreme Programming. After the first iteration of Red-Green-Refactor, I want to establish an automated build pipeline, publish test results, and code coverage results.
