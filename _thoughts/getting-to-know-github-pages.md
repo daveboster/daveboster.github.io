@@ -1,4 +1,5 @@
 ---
+layout: thought
 title: "Getting to know GitHub Pages"
 tags: github-pages jekyll-posts communication
 ---
