@@ -4,7 +4,7 @@ title: Thoughts
 ---
 
 <div class="posts">
-  {% for thought in paginator.thoughts %}
+  {% for thought in site.thoughts %}
   <article class="post">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ thought.url }}">
@@ -17,19 +17,6 @@ title: Thoughts
     {{ thought.content }}
   </article>
   {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
 </div>
 
 <span>[

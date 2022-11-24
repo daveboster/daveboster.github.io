@@ -6,8 +6,8 @@ twitter_username: davidboster
 github_username: daveboster
 
 
-paginate: 6
-paginate_path: "/thoughts/page:num/"
+#paginate: 6
+#paginate_path: "/thoughts/page:num/"
 
 collections:
   thoughts:
