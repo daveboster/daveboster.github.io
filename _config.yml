@@ -8,3 +8,8 @@ github_username: daveboster
 
 paginate: 6
 paginate_path: "/thoughts/page:num/"
+
+collections:
+  thoughts:
+    output: true
+    permalink: /thoughts/:path/
