@@ -13,13 +13,14 @@ title: Thoughts
     <time datetime="{{ thought.date | date_to_xmlschema }}" class="post-date">{{ thought.date | date_to_string }}</time>
 
     {{ thought.content }}
+
+    <span>[
+      {% for tag in thought.tags %}
+        {% capture tag_name %}{{ tag }}{% endcapture %}
+        <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+      {% endfor %}
+    ]</span>
+    
   </article>
   {% endfor %}
 </div>
-
-<span>[
-  {% for tag in page.tags %}
-    {% capture tag_name %}{{ tag }}{% endcapture %}
-    <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-  {% endfor %}
-]</span>
