@@ -5,11 +5,10 @@ description: Dream big, just don't scare the hell out of everyone 🙂
 twitter_username: davidboster
 github_username: daveboster
 
-
-#paginate: 6
-#paginate_path: "/thoughts/page:num/"
-
 collections:
   thoughts:
     output: true
     permalink: /thoughts/:path/
+
+paginate: 6
+paginate_path: "/blog/page:num/"
