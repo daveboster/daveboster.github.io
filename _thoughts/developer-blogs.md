@@ -10,14 +10,14 @@ Blog post [Your words are wasted](https://www.hanselman.com/blog/your-words-are-
 
 ## Takeaways
 - Developers should be blogging.
-- Developers who post, should probably be posting more.
-- Content should be open to the Nets; not  restricted to "walled gardens" like internal. organization sites or providers who own the platform and access to the platform.
+- Developers who blog, could probably be posting more.
+- Content should be open to the Nets; not restricted to "walled gardens" (internal company sites or platforms like Twitter?).
 - Developer content is the "Engine of the Community."
 
 ## Questions
-- What bright spots can come from recommendations from this article this article o blogging?
-- Does blogging help developers forcus on the "how" over the "what"?
-    - i.e. discussing about what was fascinating or insight was gained from doing a proof-of-concept project, versus just showing somethign can be done.
-- Does this help developers forucs on learning and mastery or their craft?
-- Does this help developers with openness and vulnerability?
-- Can it help them become better communicators?
+- What bright spots can come from these recommendations?
+- Does blogging help developers focus on the "how" over the "what"?
+    - i.e. discussing what was fascinating or insightful, versus just showing that something can be done and move on.
+- Can this help developers with learning and mastery of their craft?
+- Would this help developers get more comfortable with openness, transparency, and vulnerability?
+- Could this make us better communicators?
