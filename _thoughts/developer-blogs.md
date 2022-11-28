@@ -2,7 +2,7 @@
 layout: thought
 title: "Developer Blogs"
 tags: developer-blogs honing-craft communication
-start-date: 2022-11-25 22:53:00 CST
+date: 2022-11-25 22:53:00 -0600
 version: 1
 ---
 

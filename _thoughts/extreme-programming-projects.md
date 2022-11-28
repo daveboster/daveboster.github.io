@@ -2,7 +2,7 @@
 layout: thought
 title: "Extreme Programming Projects"
 tags: development-process extreme-programming build-pipelines
-start-date: 2022-11-18 17:00:00 CST
+date: 2022-11-18 17:00:00 -0600
 version: 1
 ---
 

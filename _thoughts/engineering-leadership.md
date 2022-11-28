@@ -2,7 +2,7 @@
 layout: thought
 title: "Engineering Leadership"
 tags: development-management competency-matrix engineering-leadership
-start-date: 2022-11-24 01:15:00 CST
+start-date: 2022-11-24 01:15:00 -0600
 version: 1
 ---
 
