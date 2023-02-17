@@ -24,9 +24,9 @@ jobs:
           ruby-version: '3.0' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Install Jekyll
-        run: gem install jekyll bundler
-      - name: Install dependencies
-        run: bundle install
+        run: gem install jekyll bundler github-pages
+      #- name: Install dependencies
+      #  run: bundle install
       - name: Jekyll build
         run: jekyll build
       - name: Build And Deploy
