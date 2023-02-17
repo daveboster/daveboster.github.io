@@ -2,7 +2,7 @@
 layout: thought
 title: "Feature Toggles"
 tags: thoughts
-date: 2022-12- 09:00:00 -0600
+date: 2022-12-05 09:00:00 -0600
 published: false
 version: 1
 ---
