@@ -13,3 +13,14 @@ collections:
 
 paginate: 6
 paginate_path: "/blog/page:num/"
+
+# Exclude these files from production site
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - LICENSE
+  - README.md
+  - docs/
+
+plugins:
+  - jekyll-paginate
