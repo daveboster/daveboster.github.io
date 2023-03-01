@@ -8,6 +8,10 @@
   list-style: none;
 }
 
+#sidebar ul.page-links li:not(:last-child) {
+  margin-bottom: 1em;
+}
+
 #sidebar ul.page-links li a {
   font-size: 26px;
   font-weight: normal;
@@ -15,6 +19,11 @@
   letter-spacing: 0;
 }
 
+header {
+  /* reduce padding from 40px */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
