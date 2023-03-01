@@ -14,7 +14,7 @@ To complete this MVP, here's some information from my first page that I'd like t
 
 This is my version of "Hello World", a line used by many programmers when getting started. Dan Turek taught Math and Computer Science at Burke High School and through some small, but impactful moments, helped shape my path in programming and technology.
 
-## The MVP of Personal Websites
+### The MVP of Personal Websites
 
 My vision for this site is to create a resource to help me process my thoughts and possibly help others.
 

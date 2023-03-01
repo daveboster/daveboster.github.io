@@ -6,9 +6,9 @@ title: Thoughts
 <div class="posts">
   {% for thought in site.thoughts %}
   <article class="post">
-    <h1 class="post-title">
+    <h2 class="post-title">
       <a href="{{ site.baseurl }}{{ thought.url }}">{{ thought.title }}</a>
-    </h1>
+    </h2>
 
     <time datetime="{{ thought.date | date_to_xmlschema }}" class="post-date">{{ thought.date | date_to_string }}</time>
 
@@ -20,7 +20,7 @@ title: Thoughts
         <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
       {% endfor %}
     ]</span>
-    
+
   </article>
   {% endfor %}
 </div>
