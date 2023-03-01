@@ -3,18 +3,18 @@ layout: default
 title: "Hi, I'm Dave, nice to meet you!"
 ---
 
-## Hello and Salutations!
+## Hello and Salutations
 
-I'm a crazy individual who loves to spend time with my family, leverage technology to help others, try some impossible things, and then see how much I can fit in 24 hours.
+My wife Janet and I are blessed with four amazing kiddos, which we are fervently preparing to unleash into the wild, so we can watch in wonder as they grow and make their positive dents on the world!
 
-### Hello Mr. Turek, I am here!
+I like to dream big, try some impossible things, collaborate and share with others, ask “why?” constantly, and challenge what I see around me.
 
-That's my version of the "Hello World", a line used by many developers when getting started. Dan Turek taught Math and Computer Science at Burke High School and through some small, but impactful moments, helped shape my path in programming and technology.
+I’m a curious and passionate professional software developer [manager] who is grateful be a member of the AMN Healthcare family! I am committed to developing myself and helping other software professionals through the relentless pursuit of mastery in Clean Coding practices and the Extreme Programming (XP) principles of Test-Drive Development (TDD), Refactoring, Pairing, and Simple Design.
 
-## The MVP of Personal Websites
+My favorite leaders whose works I continue study today include thought leaders like [Jim Collins](https://www.jimcollins.com), [Brené Brown](https://brenebrown.com), [Simon Sinek](https://simonsinek.com), and [Jocko Willink](https://jocko.com); software visionaries like [Uncle Bob (Robert C. Martin)](https://cleancoders.com), [Scott Hanselman](https://www.hanselman.com), and [Dave Farley](https://www.davefarley.net).
 
-My vision for this site is to create a resource to help me process my thoughts and possibly help others.
+## Why this website?
 
-I hope to explore the use of GitHub Pages as an effective tool for Software Developers to advocate for their public identity, to offer a tool to assist them with introspection, and to promote continual learning through an employer-agnostic repository of information.
+My vision for this site is to create a place to help me process my thoughts and improve my communication skills through disciplined writing and management of a public website that is tied directly to my name. 😬
 
-In the process of doing all of this, I'd like to improve my communication skills through the disciplined writing and management of a public website tied to my name. 😬
+I originally started this as an experiment with [GitHub Pages](https://pages.github.com) in hopes to find a simple way for Software Developers to promote their accomplishments beyond a resume; to assist with growth and continual learning through an employer-agnostic repository of information.
