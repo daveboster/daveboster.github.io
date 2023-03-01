@@ -9,7 +9,7 @@ My wife Janet and I are blessed with four amazing kiddos, which we are fervently
 
 I like to dream big, try some impossible things, collaborate and share with others, ask “why?” constantly, and challenge what I see around me.
 
-I’m a curious and passionate professional software developer [manager] who is grateful be a member of the AMN Healthcare family! I am committed to developing myself and helping other software professionals through the relentless pursuit of mastery in Clean Coding practices and the Extreme Programming (XP) principles of Test-Drive Development (TDD), Refactoring, Pairing, and Simple Design.
+I’m a curious and passionate professional software developer [manager] looking to help guide software development and the use of technology, particularly within healthcare, so to help us be more *human*, more *effective*, and more *intentional*! I am committed to continual improvement and helping other software professionals through the relentless pursuit of mastery in Clean Coding practices and the Extreme Programming (XP) principles of Test-Drive Development (TDD), Refactoring, Pairing, and Simple Design.
 
 My favorite leaders whose works I continue study today include thought leaders like [Jim Collins](https://www.jimcollins.com), [Brené Brown](https://brenebrown.com), [Simon Sinek](https://simonsinek.com), and [Jocko Willink](https://jocko.com); software visionaries like [Uncle Bob (Robert C. Martin)](https://cleancoders.com), [Scott Hanselman](https://www.hanselman.com), and [Dave Farley](https://www.davefarley.net).
 
