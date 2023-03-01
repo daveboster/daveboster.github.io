@@ -13,9 +13,9 @@ This quote or phrase is probably my most used when discussing technology, especi
 
 As part of some great leadership training over the last few years, I now understand why it's important to understand and think about the origins of the quotes and phrases we use.
 
-## Findings
+### Findings
 
-[HBR: Just because you can, doesn't mean you should](https://hbr.org/2011/12/just-because-you-can-doesnt-me) by Bill Taylor, December 16, 2011. 
+[HBR: Just because you can, doesn't mean you should](https://hbr.org/2011/12/just-because-you-can-doesnt-me) by Bill Taylor, December 16, 2011.
 
 - Article about the banking industry, ethics, etc.
 - Maybe these lessons of our not-so-distant-past are not being fully understood 🤔
