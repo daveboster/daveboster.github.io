@@ -41,6 +41,8 @@ An outline of additional thoughts I have for this topic that may get added to th
 
 - Iterative process for introducing it, by facilitating discussions, learning, and reflection (encouraging skepticism and questioning).
 - Use as an individual developer to provide an employer agnostic career development guide or tool.
+- Onboarding Process - Iteration 3 (2023)
+- Boster.dev - thought transparency (show versions of thoughts iterated over time, change log, feed, etc.)
 
 ### Onboarding Process - Iteration 3
 
