@@ -4,9 +4,24 @@ title: "Healthcare, technology, and lessons yet to be learned"
 tags: healthcare technology learning government agile
 ---
 
-In a deviation from my normal commute routine, the FM radio was on broadcasting a story on public radio, [“An electronic health records system for veterans has caused unnecessary suffering”](https://www.npr.org/2023/05/01/1173141145/an-electronic-health-records-system-for-veterans-has-caused-unnecessary-sufferin) (npr.org, 2023).
+In a deviation from my normal commute routine, the FM radio was on, and broadcasting the story [“An electronic health records system for veterans has caused unnecessary suffering”](https://www.npr.org/2023/05/01/1173141145/an-electronic-health-records-system-for-veterans-has-caused-unnecessary-sufferin) (npr.org, 2023).
 
-> “It took decades for the VA to begin updating its electronic health records system. After breakdowns, the VA stopped all work on the $16 billion update with the Oracle-Cerner electronic health record.”
+It took decades for the VA to begin updating its electronic health records system. After breakdowns, the VA stopped all work on the $16 billion update with the Oracle-Cerner electronic health record."
+
+In a four-minute listen, the story covers:
+
+- a decade-long wait for an electronic health records system upgrade
+- a ten-year, no-bid, ten-billion-dollar contract
+- a limited rollout with critical breakdowns and gaps
+- catastrophic consequences for veterans
+
+The Veterans Affairs (VA) department press release, "[VA Signs Contract with Cerner for an Electronic Health Record System](https://digital.va.gov/ehr-modernization/news-releases/va-signs-contract-with-cerner-for-an-electronic-health-record-system/)", announced the contract in May 2018. The very first statement of the news release blatantly violates advice from an early mentor: "Underpromise and over-deliver".
+
+> "I am pleased to announce we have signed a contract with Cerner today that will modernize the VA’s health care IT system and help provide seamless care to Veterans as they transition from military service to Veteran status, and when they choose to use community care."
+>
+> (digital.va.gov, 2018)
+
+On digital.va.gov, the "more stories" section from the original press release offers a view into the timeline of the project. The [VA news releases](https://digital.va.gov/ehr-modernization/category/news-releases/) site offers a more complete view.
 
 During the broadcast, a soundbite was played from Senator Patty Murray on the situation:
 
@@ -14,7 +29,7 @@ During the broadcast, a soundbite was played from Senator Patty Murray on the si
 
 That statement should make any leader, developer, or participant in software development projects pause.
 
-This offers a cautionary tale, or possible anti-pattern perspective, which has potential application in software leadership, such as practicing post-mortem analysis, “what would you do?” discussions, and “what biases might be at play?” thought exercises.
+It's a cautionary tale, maybe even an anti-pattern, but it's also a great opportunity to spark discussion, learning, and practice HugOps. Practicing external post-mortem analysis, discussions on bias, searching for "bright spots", and correlating to other similar situations.
 
 There’s a similar tale almost a decade before this with the situation around software development practices and the creation of the US Healthcare.gov website.
 
@@ -50,7 +65,7 @@ The takeaway isn't to focus on Royce or the waterfall development model, but to 
 >
 > (newyorker.com, 2013)
 
-This wasn't the first and definitely wasn't the last in very expensive, very painful, and very public, cautionary tales about the dangers inherent with large software projects.
+This wasn't the first nor the last in very expensive, very painful, and very public, cautionary tales about the dangers inherent with large software projects.
 
 ## What is it true of?
 
