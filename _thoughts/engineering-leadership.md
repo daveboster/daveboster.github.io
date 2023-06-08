@@ -8,7 +8,7 @@ version: 1
 
 After our small (but mighty) five-person software company, NewFire Group, decided to join a much larger organization with a matching vision and mission, it wasn't long before I asked myself, "What am I supposed to do as a Development Manager?".
 
-## What is it I'm supposed to do?
+### What is it I'm supposed to do?
 
 As a software developer and small business owner, I thought I had nailed down the essentials for managing a team of talented software developers.
 
@@ -22,7 +22,7 @@ In the middle of this struggle, Dave Royce sent me a link to a video about Devel
 
 [What Engineering Managers Should Do (and Why We Don’t) • Lena Reinhard • GOTO 2019](https://youtu.be/Q_bJVokYLRI)
 
-## CircleCI Engineering Competency Matrix
+### CircleCI Engineering Competency Matrix
 
 At the end of Lana's presentation, there's a link to their [CircleCI Competency Matrix](https://docs.google.com/spreadsheets/d/131XZCEb8LoXqy79WWrhCX4sBnGhCM1nAIz4feFZJsEo/edit?usp=drive_web&ouid=102074010046731208988). Lana describes in the article, ["Why we re-designed our engineering career paths at CircleCI"](https://circleci.com/blog/why-we-re-designed-our-engineering-career-paths-at-circleci/), CircleCI Blog, 11-Dec-2018, how they had created the matrix three years earlier and had recently updated it to reflect their growth and lessons learned.
 
@@ -35,7 +35,7 @@ I took both the previous Career Path & Salary Espectations paragraphs we had and
 
 > side-note I highly recommend Uncle Bob's most recent update, Clean Code Episode 45: [The Programmer's Oath](https://cleancoders.com/episode/clean-code-episode-45).
 
-## Thought Backlog
+### Thought Backlog
 
 An outline of additional thoughts I have for this topic that may get added to this post in the future.
 
@@ -44,7 +44,7 @@ An outline of additional thoughts I have for this topic that may get added to th
 - Onboarding Process - Iteration 3 (2023)
 - Boster.dev - thought transparency (show versions of thoughts iterated over time, change log, feed, etc.)
 
-### Onboarding Process - Iteration 3
+#### Onboarding Process - Iteration 3
 
 Process
 

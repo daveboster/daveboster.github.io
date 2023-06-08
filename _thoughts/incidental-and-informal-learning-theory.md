@@ -20,7 +20,7 @@ More to come as I unpack this.
 
 Our goal was to help with the understanding and adoption of Test-Driven Development (TDD). We started by licensing videos from Uncle Bob (Robert C. Martin) and his fanstatic [Clean Coders](https://cleancoders.com) website and then held an internal "Tech Talk" with an internal group of developers.
 
-I love to iterate and discover, so though a series of "tech talks," we came to the following format:
+I love to iterate and discover, so through a series of "tech talks," we came to the following format:
 
 - Length: 2 hours (120 minutes)
 - Split video into three segments, each segment consisting of:
