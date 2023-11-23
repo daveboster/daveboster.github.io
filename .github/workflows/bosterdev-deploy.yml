@@ -1,16 +1,28 @@
-name: Azure Static Web Apps CI/CD
+name: Boster.dev CI/CD
 
 on:
   push:
     branches:
       - main
+    paths:
+      - '.github/workflows/bosterdev-deploy.yml'
+      - 'src/boster.dev/**'
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
+    paths:
+      - '.github/workflows/bosterdev-deploy.yml'
+      - 'src/boster.dev/**'
 
 jobs:
   build_and_deploy_job:
+    defaults:
+      run:
+        # jobs.<job_id>.defaults.run
+        # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_iddefaultsrun
+        working-directory: ./src/boster.dev/
+
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy Job
