@@ -51,7 +51,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           skip_app_build: true
-          app_location: "$GITHUB_WORKSPACE/_site" # App source code path
+          app_location: "${{ github.workspace }}/_site" # App source code path
 
   close_pull_request_job:
     defaults:
