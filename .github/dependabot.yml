@@ -4,9 +4,13 @@
 
 version: 2
 updates:
-# Enabling Dependabot version updates for actions 
-# https://docs.github.com/en/code-security/dependabot/working-with-dependabot/keeping-your-actions-up-to-date-with-dependabot
+  # Enabling Dependabot version updates for actions
+  # https://docs.github.com/en/code-security/dependabot/working-with-dependabot/keeping-your-actions-up-to-date-with-dependabot
   - package-ecosystem: "github-actions"
     directory: "/"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "bundler"
+    directory: "/src/boster.dev"
     schedule:
       interval: "weekly"
