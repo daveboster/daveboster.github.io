@@ -44,6 +44,23 @@ of leaving the only record in chat.
 The site source is `src/boster.dev`. Use Ruby 3.2, matching
 `src/boster.dev/.ruby-version` and the GitHub Actions workflow.
 
+The preferred local workflow is:
+
+```bash
+scripts/test-and-preview.sh
+```
+
+That command runs the verification checks, then starts a preview server at
+`http://127.0.0.1:4000`.
+
+To run the checks without starting the preview server:
+
+```bash
+scripts/test-and-preview.sh --check-only
+```
+
+The manual build commands are:
+
 ```bash
 cd src/boster.dev
 bundle install

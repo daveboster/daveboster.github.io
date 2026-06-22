@@ -24,3 +24,15 @@ load "helpers/bats_setup.bash"
   assert_file_contains ".gitignore" "src/boster.dev/_site/"
   assert_file_contains ".gitignore" ".bundle/"
 }
+
+@test "test and preview script documents the local verification flow" {
+  assert_file_exists "scripts/test-and-preview.sh"
+  assert_file_contains "docs/codex/workstation-setup.md" "scripts/test-and-preview.sh"
+
+  run "$(fixture_path "scripts/test-and-preview.sh")" --help
+
+  [ "$status" -eq 0 ]
+  [[ "$output" == *"bundle exec jekyll build"* ]]
+  [[ "$output" == *"bats test"* ]]
+  [[ "$output" == *"bundle exec jekyll serve"* ]]
+}
