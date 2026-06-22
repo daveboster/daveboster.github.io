@@ -12,6 +12,7 @@ on:
       - '.gitignore'
       - 'AGENTS.md'
       - 'docs/**'
+      - 'scripts/**'
       - 'src/boster.dev/**'
       - 'test/**'
   pull_request:
@@ -25,6 +26,7 @@ on:
       - '.gitignore'
       - 'AGENTS.md'
       - 'docs/**'
+      - 'scripts/**'
       - 'src/boster.dev/**'
       - 'test/**'
 
@@ -48,17 +50,13 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2' # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
       - name: Set up BATS
         uses: bats-core/bats-action@3.0.1
 
-      - name: Jekyll build
-        run: bundle exec jekyll build
-
-      - name: BATS tests
+      - name: Verify site
         working-directory: ${{ github.workspace }}
-        run: bats test
+        run: scripts/test-and-preview.sh --check-only
 
       - name: Build And Deploy
         id: builddeploy

@@ -10,7 +10,7 @@ load "helpers/bats_setup.bash"
 }
 
 @test "workflow builds with the repository dependency contract" {
-  assert_file_contains ".github/workflows/bosterdev-deploy.yml" "bundle exec jekyll build"
+  assert_file_contains ".github/workflows/bosterdev-deploy.yml" "scripts/test-and-preview.sh --check-only"
   assert_file_contains ".github/workflows/bosterdev-deploy.yml" "ruby-version: '3.2'"
 }
 
