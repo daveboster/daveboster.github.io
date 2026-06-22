@@ -7,14 +7,26 @@ on:
       - main
     paths:
       - '.github/workflows/bosterdev-deploy.yml'
+      - '.github/ISSUE_TEMPLATE/**'
+      - '.github/PULL_REQUEST_TEMPLATE.md'
+      - '.gitignore'
+      - 'AGENTS.md'
+      - 'docs/**'
       - 'src/boster.dev/**'
+      - 'test/**'
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
     paths:
       - '.github/workflows/bosterdev-deploy.yml'
+      - '.github/ISSUE_TEMPLATE/**'
+      - '.github/PULL_REQUEST_TEMPLATE.md'
+      - '.gitignore'
+      - 'AGENTS.md'
+      - 'docs/**'
       - 'src/boster.dev/**'
+      - 'test/**'
 
 jobs:
   build_and_deploy_job:
@@ -38,11 +50,15 @@ jobs:
           ruby-version: '3.2' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
-      - name: Install Jekyll
-        run: gem install bundler github-pages jekyll-paginate
+      - name: Set up BATS
+        uses: bats-core/bats-action@3.0.1
 
       - name: Jekyll build
-        run: jekyll build
+        run: bundle exec jekyll build
+
+      - name: BATS tests
+        working-directory: ${{ github.workspace }}
+        run: bats test
 
       - name: Build And Deploy
         id: builddeploy

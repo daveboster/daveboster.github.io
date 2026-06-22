@@ -1,0 +1,5 @@
+src/boster.dev/_site/
+src/boster.dev/.jekyll-cache/
+src/boster.dev/.sass-cache/
+.bundle/
+.codex-log/
