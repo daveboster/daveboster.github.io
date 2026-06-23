@@ -23,6 +23,28 @@ Primary goal:
 Implement the approved website strategy and copy from
 docs/content/professional-website-refresh.md.
 
+Theme direction:
+- Use Chirpy as the target Jekyll theme direction.
+- Chirpy is being selected because the refreshed site should be text-focused,
+  searchable, tag/category friendly, and supportive of a durable Blog and
+  Thoughts workflow.
+- Adapt Chirpy to David's individual professional site. Do not let the default
+  theme structure reduce the site to only a technical blog.
+- Keep Home, About, Work, Practices, Blog, Thoughts, and Contact as intentional
+  public surfaces.
+- Decide and document whether Thoughts should be implemented as a custom
+  collection, a category, or another clearly labeled section before migrating
+  content.
+
+Profile image direction:
+- Use the attached candid seated photo as the preferred Chirpy avatar/profile
+  image candidate.
+- Create a web optimized square crop only after David approves committing the
+  photo to this public repository.
+- Do not commit the original photo from the local Photos library.
+- Do not publish the image to production until it has been reviewed in the
+  preview site at desktop and mobile sizes.
+
 Positioning:
 - boster.dev is about David Boster as an individual.
 - Treat NewFire Group like an employer or career-history entry only.

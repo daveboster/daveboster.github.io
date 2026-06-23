@@ -26,6 +26,41 @@ The current Blog and Thoughts structure should stay. Blog is for polished,
 durable writing. Thoughts is for working ideas, learning notes, and raw material
 that may become polished writing later.
 
+## Theme Direction
+
+Use Chirpy as the target Jekyll theme direction.
+
+Chirpy fits the refreshed site because it is text-focused, supports a durable
+writing workflow, and gives Blog and Thoughts room to grow through categories,
+tags, archives, search, dark/light mode, and an avatar-driven sidebar. It should
+be adapted to David's individual professional positioning rather than used as a
+generic developer-blog template.
+
+Implementation notes:
+
+- Preserve the existing content distinction between Blog and Thoughts.
+- Map polished Blog posts into Chirpy's normal post model.
+- Decide whether Thoughts should become a custom collection, a category, or a
+  clearly labeled section before migration.
+- Keep Home, About, Work, Practices, and Contact as first-class professional
+  surfaces, even though Chirpy's default structure is writing-centered.
+- Prototype the Chirpy migration on a preview branch before replacing the
+  current production site.
+
+## Profile Image Direction
+
+Use the attached candid seated photo as the preferred profile image candidate
+for the Chirpy sidebar/avatar treatment.
+
+The photo feels personal and approachable, which fits the individual-first site
+direction better than a corporate headshot. Before publishing, create a web
+optimized square crop and review it in Chirpy's actual sidebar at desktop and
+mobile sizes.
+
+Public repo rule: do not commit the image file into this public repository until
+David explicitly approves making that photo public in the website source and
+preview branch.
+
 ## Positioning Statement
 
 Candidate homepage positioning:
