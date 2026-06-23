@@ -1,0 +1,18 @@
+---
+layout: null
+permalink: /blog/
+sitemap: false
+---
+{% assign redirect_target = "/writing/" %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="canonical" href="{{ redirect_target | absolute_url }}">
+    <meta http-equiv="refresh" content="0; url={{ redirect_target | relative_url }}">
+    <title>Page moved</title>
+  </head>
+  <body>
+    <p>This page has moved to <a href="{{ redirect_target | relative_url }}">{{ redirect_target | absolute_url }}</a>.</p>
+  </body>
+</html>

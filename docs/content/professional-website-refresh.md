@@ -22,24 +22,24 @@ The site should answer four questions quickly:
 3. How does he work with people and teams?
 4. What body of work supports that message?
 
-The current Blog and Thoughts structure should stay. Blog is for polished,
-durable writing. Thoughts is for working ideas, learning notes, and raw material
-that may become polished writing later.
+The current polished-writing and Thoughts structure should stay. Writing is for
+polished, durable articles and essays. Thoughts is for working ideas, learning
+notes, and raw material that may become polished writing later.
 
 ## Theme Direction
 
 Use Chirpy as the target Jekyll theme direction.
 
 Chirpy fits the refreshed site because it is text-focused, supports a durable
-writing workflow, and gives Blog and Thoughts room to grow through categories,
+writing workflow, and gives Writing and Thoughts room to grow through categories,
 tags, archives, search, dark/light mode, and an avatar-driven sidebar. It should
 be adapted to David's individual professional positioning rather than used as a
 generic developer-blog template.
 
 Implementation notes:
 
-- Preserve the existing content distinction between Blog and Thoughts.
-- Map polished Blog posts into Chirpy's normal post model.
+- Preserve the existing content distinction between Writing and Thoughts.
+- Map polished Writing entries into Chirpy's normal post model.
 - Decide whether Thoughts should become a custom collection, a category, or a
   clearly labeled section before migration.
 - Keep Home, About, Work, Practices, and Contact as first-class professional
@@ -88,8 +88,8 @@ Review note: publish only after private claim review in career-source.
 | About | Career narrative, operating principles, and how the pieces fit together. | 1 |
 | Work | Public-safe body of work, selected projects, talks, writing, and repositories. | 1 |
 | Practices | Core working practices: architecture, clean code, delivery, DevOps, product collaboration, and AI-assisted engineering. | 2 |
-| Blog | Polished articles and durable public work. | Existing, improve |
-| Thoughts | Working notes, ideas, and reflections that may later become Blog material. | Existing, clarify |
+| Writing | Polished articles and durable public work. | Existing, improve |
+| Thoughts | Working notes, ideas, and reflections that may later become Writing material. | Existing, clarify |
 | Contact | Individual professional contact path. | 1 |
 
 ## Draft Page Copy
@@ -121,7 +121,7 @@ Primary links:
 - About
 - Work
 - Practices
-- Blog
+- Writing
 - Thoughts
 - Contact
 
@@ -215,11 +215,11 @@ Candidate AI-assisted engineering language:
 Review note: do not imply specific production experience with any named AI tool
 unless the private source map supports it.
 
-### Blog
+### Writing
 
 Definition:
 
-> Blog posts are polished, durable pieces of writing. They should be edited,
+> Writing entries are polished, durable pieces of writing. They should be edited,
 > source-aware, and useful to someone other than future me.
 
 Candidate page intro:
@@ -227,7 +227,7 @@ Candidate page intro:
 > Polished writing about software, delivery, leadership, learning, and the
 > practice of building systems with people.
 
-Blog acceptance criteria:
+Writing acceptance criteria:
 
 - Has a clear audience and point.
 - Has been edited for public readability.
@@ -240,7 +240,7 @@ Blog acceptance criteria:
 Definition:
 
 > Thoughts are working notes. They can be rough, incomplete, exploratory, or
-> personal reflections that may later become Blog posts.
+> personal reflections that may later become Writing entries.
 
 Candidate page intro:
 
@@ -266,20 +266,20 @@ Candidate intro:
 Review note: decide whether contact should point to email, LinkedIn, GitHub, or
 a dedicated form before implementation.
 
-## Blog And Thoughts Editorial Model
+## Writing And Thoughts Editorial Model
 
 Use this promotion path:
 
 1. Capture raw idea in `docs/content/ideas-backlog.md` or as a private note.
 2. Draft as a Thought if it is useful to publish while still exploratory.
-3. Promote to Blog only after the idea has a clear audience, edited structure,
+3. Promote to Writing only after the idea has a clear audience, edited structure,
    source checks, and privacy review.
-4. Link the Blog post back to the originating Thought when that history adds
+4. Link the Writing entry back to the originating Thought when that history adds
    value.
 
 Content rules:
 
-- Blog is polished.
+- Writing is polished.
 - Thoughts are intentionally rough but not careless.
 - Private career evidence stays private until reviewed.
 - Older posts can remain historical, but should be framed as archive material
@@ -360,7 +360,7 @@ message is approved.
 - Current role does not make the whole profile depend on NewFire Group.
 - Experience entries support the same individual story rather than separate
   personas.
-- Featured links point to boster.dev, selected public work, and polished Blog
+- Featured links point to boster.dev, selected public work, and polished Writing
   posts.
 - Skills match visible practices: software architecture, software development,
   technical leadership, DevOps, CI/CD, clean code, TDD, cloud, product
@@ -373,7 +373,7 @@ Do these only after strategy and copy review:
 1. Create the private career-source claim map for approved public copy.
 2. Refresh the homepage around the new individual-first positioning.
 3. Add About, Work, Practices, and Contact pages.
-4. Update Blog and Thoughts index copy to clarify their editorial roles.
+4. Update Writing and Thoughts index copy to clarify their editorial roles.
 5. Triage visible Thoughts for placeholders and archive/update decisions.
 6. Update site metadata for clearer search and social previews.
 7. Design a more polished visual system while keeping the site readable and
@@ -387,7 +387,7 @@ Do these only after strategy and copy review:
 - boster.dev is individual-first and employer-independent.
 - NewFire Group is not used as the site brand, funnel, or primary call to
   action.
-- Blog and Thoughts remain first-class sections with clearer roles.
+- Writing and Thoughts remain first-class sections with clearer roles.
 - LinkedIn alignment is planned from the same canonical message.
 - Private source mapping is explicitly kept out of the public website repo.
 - No production content changes are made before concept and copy approval.

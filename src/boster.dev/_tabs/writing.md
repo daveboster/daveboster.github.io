@@ -1,8 +1,8 @@
 ---
-title: Blog
+title: Writing
 icon: fas fa-pen-nib
 order: 1
-permalink: /blog/
+permalink: /writing/
 ---
 
 Polished writing about software, delivery, leadership, learning, and the

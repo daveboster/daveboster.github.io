@@ -26,11 +26,11 @@ docs/content/professional-website-refresh.md.
 Theme direction:
 - Use Chirpy as the target Jekyll theme direction.
 - Chirpy is being selected because the refreshed site should be text-focused,
-  searchable, tag/category friendly, and supportive of a durable Blog and
+  searchable, tag/category friendly, and supportive of a durable Writing and
   Thoughts workflow.
 - Adapt Chirpy to David's individual professional site. Do not let the default
   theme structure reduce the site to only a technical blog.
-- Keep Home, About, Work, Practices, Blog, Thoughts, and Contact as intentional
+- Keep Home, About, Work, Practices, Writing, Thoughts, and Contact as intentional
   public surfaces.
 - Decide and document whether Thoughts should be implemented as a custom
   collection, a category, or another clearly labeled section before migrating
@@ -54,12 +54,12 @@ Positioning:
   and useful.
 
 Content model:
-- Preserve and improve the existing Blog and Thoughts structure.
-- Blog contains polished articles, essays, finished professional writing, or
+- Preserve and improve the existing Writing and Thoughts structure.
+- Writing contains polished articles, essays, finished professional writing, or
   durable works.
 - Thoughts contains informal notes, working ideas, learning logs, reflections,
-  and material that may later become source material for Blog posts.
-- A Thought can later be promoted into a Blog post after review, editing, and
+  and material that may later become source material for Writing entries.
+- A Thought can later be promoted into a Writing entry after review, editing, and
   source validation.
 
 LinkedIn consistency:
@@ -88,9 +88,9 @@ Inputs to inspect:
 Implementation expectations:
 - Build the new design and content on a dev branch.
 - Keep the site personal, professional, readable, and restrained.
-- Add or update Home, About, Work, Practices, Blog, Thoughts, and Contact
+- Add or update Home, About, Work, Practices, Writing, Thoughts, and Contact
   surfaces as approved.
-- Clarify Blog vs Thoughts without deleting historical content unless requested.
+- Clarify Writing vs Thoughts without deleting historical content unless requested.
 - Keep old posts available unless there is an explicit archive/removal decision.
 - Update metadata for clearer search and social previews.
 
