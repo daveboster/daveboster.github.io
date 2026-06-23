@@ -63,6 +63,20 @@ To run the checks without starting the preview server:
 scripts/test-and-preview.sh --check-only
 ```
 
+That command also runs the offline site quality audit for internal links,
+metadata, and accessibility basics. To run the audit directly:
+
+```bash
+scripts/audit-site-quality.sh --skip-build
+```
+
+External links are intentionally opt-in so local and CI checks do not depend on
+third-party availability:
+
+```bash
+scripts/audit-site-quality.sh --skip-build --external-links
+```
+
 The manual build commands are:
 
 ```bash
