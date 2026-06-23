@@ -21,6 +21,7 @@ Runs the local verification flow, then starts the Jekyll preview server.
 Verification flow:
   bundle install
   bundle exec jekyll build
+  scripts/audit-site-quality.sh --skip-build
   bats test
   git diff --check
 
@@ -131,6 +132,7 @@ fi
 run bundle exec jekyll build
 
 cd "$repo_root"
+run scripts/audit-site-quality.sh --skip-build
 run bats test
 run git diff --check
 

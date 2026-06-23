@@ -65,12 +65,25 @@ load "helpers/bats_setup.bash"
 
 @test "test and preview script documents the local verification flow" {
   assert_file_exists "scripts/test-and-preview.sh"
+  assert_file_exists "scripts/audit-site-quality.sh"
   assert_file_contains "docs/codex/workstation-setup.md" "scripts/test-and-preview.sh"
+  assert_file_contains "docs/codex/workstation-setup.md" "scripts/audit-site-quality.sh --skip-build"
+  assert_file_contains "scripts/test-and-preview.sh" "scripts/audit-site-quality.sh --skip-build"
 
   run "$(fixture_path "scripts/test-and-preview.sh")" --help
 
   [ "$status" -eq 0 ]
   [[ "$output" == *"bundle exec jekyll build"* ]]
+  [[ "$output" == *"scripts/audit-site-quality.sh --skip-build"* ]]
   [[ "$output" == *"bats test"* ]]
   [[ "$output" == *"bundle exec jekyll serve"* ]]
+}
+
+@test "site quality audit script documents offline and external checks" {
+  run "$(fixture_path "scripts/audit-site-quality.sh")" --help
+
+  [ "$status" -eq 0 ]
+  [[ "$output" == *"--skip-build"* ]]
+  [[ "$output" == *"--external-links"* ]]
+  [[ "$output" == *"internal href/src references resolve"* ]]
 }

@@ -9,6 +9,12 @@ layout: default
     {{ post.description }}
   </li>
 {% endfor %}
+{% assign tagged_thoughts = site.thoughts | where_exp: "thought", "thought.tags contains page.tag" %}
+{% for thought in tagged_thoughts %}
+  <li><a href="{{ thought.url }}">{{ thought.title }}</a>{% if thought.date %} ({{ thought.date | date_to_string }}){% endif %}<br>
+    {{ thought.description }}
+  </li>
+{% endfor %}
 </ul>
 </div>
 <hr>
