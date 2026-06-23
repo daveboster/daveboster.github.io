@@ -29,3 +29,15 @@ assert_file_contains() {
     return 1
   fi
 }
+
+refute_file_contains() {
+  local path="$1"
+  local unexpected="$2"
+  local full_path
+  full_path="$(fixture_path "$path")"
+
+  if grep -Fq "$unexpected" "$full_path"; then
+    echo "Expected $path not to contain: $unexpected" >&2
+    return 1
+  fi
+}
