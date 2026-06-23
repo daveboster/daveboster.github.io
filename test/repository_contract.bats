@@ -18,6 +18,20 @@ load "helpers/bats_setup.bash"
   assert_file_contains ".github/workflows/bosterdev-deploy.yml" "github.actor != 'dependabot[bot]'"
 }
 
+@test "site publishes crawler discovery endpoints" {
+  assert_file_contains "src/boster.dev/_config.yml" "url: \"https://boster.dev\""
+  assert_file_contains "src/boster.dev/_config.yml" "repository: daveboster/daveboster.github.io"
+  assert_file_exists "src/boster.dev/robots.txt"
+  assert_file_exists "src/boster.dev/sitemap.xml"
+  assert_file_contains "src/boster.dev/robots.txt" "Sitemap: {{ \"/sitemap.xml\" | absolute_url }}"
+  assert_file_contains "src/boster.dev/sitemap.xml" "http://www.sitemaps.org/schemas/sitemap/0.9"
+  assert_file_contains "src/boster.dev/sitemap.xml" "item.url contains \"/assets/\""
+}
+
+@test "layout does not require GitHub metadata at build time" {
+  refute_file_contains "src/boster.dev/_layouts/default.html" "site.github."
+}
+
 @test "dependabot monitors GitHub Actions and Bundler dependencies" {
   assert_file_contains ".github/dependabot.yml" "package-ecosystem: \"github-actions\""
   assert_file_contains ".github/dependabot.yml" "package-ecosystem: \"bundler\""

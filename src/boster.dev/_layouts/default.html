@@ -4,7 +4,8 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
+    {% assign cache_buster = site.time | date: "%s" %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: cache_buster | relative_url }}" media="screen" type="text/css">
     <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
     <link href="https://github.com/daveboster" rel="me">
     <link href="https://boster.dev/" rel="me">
@@ -22,14 +23,11 @@
     <header>
       <div class="inner">
         <a href="{{ '/' | absolute_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <h1>{{ site.title | default: "Dave Boster" }}</h1>
         </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-        {% if site.github.is_project_page %}
-          <a href="{{ site.github.repository_url }}" class="button"><small>View project on</small> GitHub</a>
-        {% endif %}
-        {% if site.github.is_user_page %}
-          <a href="{{ site.github.owner_url }}" class="button"><small>Follow me on</small> GitHub</a>
+        <h2>{{ site.description }}</h2>
+        {% if site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}" class="button"><small>Follow me on</small> GitHub</a>
         {% endif %}
       </div>
     </header>
@@ -46,12 +44,12 @@
             <li><a href="/thoughts/" class="page-link">Thoughts</a></li>
           </ul>
           
-          {% if site.show_downloads %}
-            <a href="{{ site.github.zip_url }}" class="button">
+          {% if site.show_downloads and site.repository %}
+            <a href="https://github.com/{{ site.repository }}/archive/refs/heads/main.zip" class="button">
               <small>Download</small>
               .zip file
             </a>
-            <a href="{{ site.github.tar_url }}" class="button">
+            <a href="https://github.com/{{ site.repository }}/archive/refs/heads/main.tar.gz" class="button">
               <small>Download</small>
               .tar.gz file
             </a>

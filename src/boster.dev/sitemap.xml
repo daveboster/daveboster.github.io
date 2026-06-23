@@ -1,0 +1,28 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign sitemap_pages = site.pages | where_exp: "item", "item.sitemap != false" %}
+  {% for item in sitemap_pages %}
+    {% unless item.url contains ".xml" or item.url contains ".txt" or item.url contains "/assets/" %}
+  <url>
+    <loc>{{ item.url | absolute_url | xml_escape }}</loc>
+    {% if item.date %}<lastmod>{{ item.date | date_to_xmlschema }}</lastmod>{% endif %}
+  </url>
+    {% endunless %}
+  {% endfor %}
+  {% for item in site.posts %}
+  <url>
+    <loc>{{ item.url | absolute_url | xml_escape }}</loc>
+    <lastmod>{{ item.date | date_to_xmlschema }}</lastmod>
+  </url>
+  {% endfor %}
+  {% for item in site.thoughts %}
+  <url>
+    <loc>{{ item.url | absolute_url | xml_escape }}</loc>
+    {% if item.date %}<lastmod>{{ item.date | date_to_xmlschema }}</lastmod>{% endif %}
+  </url>
+  {% endfor %}
+</urlset>

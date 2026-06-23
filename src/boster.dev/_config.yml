@@ -3,8 +3,10 @@ theme: jekyll-theme-architect
 title: Dave Boster
 email: david@boster.us
 description: How Fascinating! ＼(๏◡๏)／
+url: "https://boster.dev"
 twitter_username: davidboster
 github_username: daveboster
+repository: daveboster/daveboster.github.io
 
 collections:
   thoughts:
