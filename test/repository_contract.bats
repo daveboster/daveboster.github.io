@@ -50,6 +50,14 @@ load "helpers/bats_setup.bash"
   assert_file_contains ".github/dependabot.yml" "directory: \"/src/boster.dev\""
 }
 
+@test "content ideas use a backlog document before issue work" {
+  assert_file_exists "docs/content/ideas-backlog.md"
+  assert_file_exists ".github/ISSUE_TEMPLATE/content-work.md"
+  assert_file_not_exists ".github/ISSUE_TEMPLATE/content-idea.md"
+  assert_file_contains "AGENTS.md" "Raw content ideas live in `docs/content/ideas-backlog.md`"
+  assert_file_contains ".github/ISSUE_TEMPLATE/content-work.md" "docs/content/ideas-backlog.md"
+}
+
 @test "generated and local files are ignored" {
   assert_file_contains ".gitignore" "src/boster.dev/_site/"
   assert_file_contains ".gitignore" ".bundle/"

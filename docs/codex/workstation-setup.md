@@ -29,6 +29,10 @@ has:
 - verification commands
 - open questions or blocked items
 
+Use `docs/content/ideas-backlog.md` for rough content ideas. Create a GitHub
+issue only when an idea is ready to become active work with acceptance criteria
+and verification steps.
+
 Before starting work, inspect the issue and open pull requests:
 
 ```bash

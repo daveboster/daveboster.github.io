@@ -12,12 +12,17 @@ status, and handoff between Codex sessions on different workstations.
 - Generated site output belongs in `src/boster.dev/_site` and must not be
   committed.
 - Repo coordination docs live under `docs/`.
+- Raw content ideas live in `docs/content/ideas-backlog.md`; create GitHub
+  issues only when an idea is ready for active drafting, review, or publication
+  work.
 - Bash and workflow helper tests live under `test/` and use BATS.
 
 ## Working Agreements
 
 - Start non-trivial work on a `dev/` branch.
 - Use GitHub issues for task intent, acceptance criteria, and follow-up work.
+- Use the content ideas backlog for rough writing ideas; do not create one
+  GitHub issue per untriaged idea.
 - Keep secrets, Azure tokens, local credentials, and generated service files out
   of commits.
 - Preserve existing content voice unless the issue explicitly requests a rewrite.
