@@ -32,6 +32,18 @@ load "helpers/bats_setup.bash"
   refute_file_contains "src/boster.dev/_layouts/default.html" "site.github."
 }
 
+@test "known site spelling and tag markup issues stay fixed" {
+  assert_file_contains "src/boster.dev/tag/github-pages.md" "title: \"Topic: GitHub Pages\""
+  assert_file_contains "src/boster.dev/tag/jekyll-posts.md" "tag: jekyll-posts"
+  assert_file_exists "src/boster.dev/_posts/2023-05-02-healthcare-technology-lessons-yet-to-be-learned.md"
+  assert_file_not_exists "src/boster.dev/_posts/2023-05-02-healthcare-technolgy-lessons-yet-to-be-learned.md"
+  assert_file_exists "src/boster.dev/2023/05/02/healthcare-technolgy-lessons-yet-to-be-learned.html"
+  assert_file_contains "src/boster.dev/2023/05/02/healthcare-technolgy-lessons-yet-to-be-learned.html" "healthcare-technology-lessons-yet-to-be-learned.html"
+  assert_file_contains "src/boster.dev/index.md" "Test-Driven Development (TDD)"
+  assert_file_contains "src/boster.dev/_layouts/post.html" "highlighter-rouge"
+  refute_file_contains "src/boster.dev/_layouts/post.html" "highligher-rouge"
+}
+
 @test "dependabot monitors GitHub Actions and Bundler dependencies" {
   assert_file_contains ".github/dependabot.yml" "package-ecosystem: \"github-actions\""
   assert_file_contains ".github/dependabot.yml" "package-ecosystem: \"bundler\""

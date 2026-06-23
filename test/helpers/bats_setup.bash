@@ -18,6 +18,16 @@ assert_file_exists() {
   fi
 }
 
+assert_file_not_exists() {
+  local path
+  path="$(fixture_path "$1")"
+
+  if [[ -f "$path" ]]; then
+    echo "Expected file not to exist: $1" >&2
+    return 1
+  fi
+}
+
 assert_file_contains() {
   local path="$1"
   local expected="$2"

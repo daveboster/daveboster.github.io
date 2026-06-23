@@ -12,7 +12,7 @@ Objective is to provide a public statement to state my aspiration and values sim
 
 I realized I’ve been working on this idea though a variety of documents, tech talks, job postings, and profile descriptions.
 
-> I am committed to the continual learning and improvement of my craft as a Software Development Professional through the relentless pursuit of mastery in Extreme Programming (XP) principles of Test-Drive Development (TDD), Refactoring, Pairing, and Simple Design, and Clean Coding practices.
+> I am committed to the continual learning and improvement of my craft as a Software Development Professional through the relentless pursuit of mastery in Extreme Programming (XP) principles of Test-Driven Development (TDD), Refactoring, Pairing, and Simple Design, and Clean Coding practices.
 >
 > I want to use my time in this profession, to find ways of applying software and technology to  worthy aspirations to help us  be more human, more effective, and more intentional!
 
