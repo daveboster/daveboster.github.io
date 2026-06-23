@@ -5,8 +5,8 @@ load "helpers/bats_setup.bash"
 @test "site has a Bundler dependency contract" {
   assert_file_exists "src/boster.dev/Gemfile"
   assert_file_contains "src/boster.dev/.ruby-version" "3.2"
-  assert_file_contains "src/boster.dev/Gemfile" "gem \"github-pages\""
-  assert_file_contains "src/boster.dev/Gemfile" "gem \"jekyll-paginate\""
+  assert_file_contains "src/boster.dev/Gemfile" "gem \"jekyll\""
+  assert_file_contains "src/boster.dev/Gemfile" "gem \"jekyll-theme-chirpy\""
 }
 
 @test "workflow builds with the repository dependency contract" {
@@ -21,27 +21,27 @@ load "helpers/bats_setup.bash"
 @test "site publishes crawler discovery endpoints" {
   assert_file_contains "src/boster.dev/_config.yml" "url: \"https://boster.dev\""
   assert_file_contains "src/boster.dev/_config.yml" "repository: daveboster/daveboster.github.io"
-  assert_file_exists "src/boster.dev/robots.txt"
-  assert_file_exists "src/boster.dev/sitemap.xml"
-  assert_file_contains "src/boster.dev/robots.txt" "Sitemap: {{ \"/sitemap.xml\" | absolute_url }}"
-  assert_file_contains "src/boster.dev/sitemap.xml" "http://www.sitemaps.org/schemas/sitemap/0.9"
-  assert_file_contains "src/boster.dev/sitemap.xml" "item.url contains \"/assets/\""
+  assert_file_contains "src/boster.dev/_config.yml" "- jekyll-sitemap"
+  assert_file_not_exists "src/boster.dev/robots.txt"
+  assert_file_not_exists "src/boster.dev/sitemap.xml"
 }
 
-@test "layout does not require GitHub metadata at build time" {
-  refute_file_contains "src/boster.dev/_layouts/default.html" "site.github."
+@test "site uses Chirpy without local theme layout overrides" {
+  assert_file_contains "src/boster.dev/_config.yml" "theme: jekyll-theme-chirpy"
+  assert_file_contains "src/boster.dev/_config.yml" "avatar: \"/assets/img/avatar.jpg\""
+  assert_file_exists "src/boster.dev/assets/img/avatar.jpg"
+  assert_file_exists "src/boster.dev/_tabs/blog.md"
+  assert_file_exists "src/boster.dev/_tabs/thoughts.md"
+  assert_file_not_exists "src/boster.dev/_layouts/default.html"
+  assert_file_not_exists "src/boster.dev/_layouts/post.html"
 }
 
 @test "known site spelling and tag markup issues stay fixed" {
-  assert_file_contains "src/boster.dev/tag/github-pages.md" "title: \"Topic: GitHub Pages\""
-  assert_file_contains "src/boster.dev/tag/jekyll-posts.md" "tag: jekyll-posts"
   assert_file_exists "src/boster.dev/_posts/2023-05-02-healthcare-technology-lessons-yet-to-be-learned.md"
   assert_file_not_exists "src/boster.dev/_posts/2023-05-02-healthcare-technolgy-lessons-yet-to-be-learned.md"
   assert_file_exists "src/boster.dev/2023/05/02/healthcare-technolgy-lessons-yet-to-be-learned.html"
-  assert_file_contains "src/boster.dev/2023/05/02/healthcare-technolgy-lessons-yet-to-be-learned.html" "healthcare-technology-lessons-yet-to-be-learned.html"
+  assert_file_contains "src/boster.dev/2023/05/02/healthcare-technolgy-lessons-yet-to-be-learned.html" "/posts/healthcare-technology-lessons-yet-to-be-learned/"
   assert_file_contains "src/boster.dev/index.md" "Test-Driven Development (TDD)"
-  assert_file_contains "src/boster.dev/_layouts/post.html" "highlighter-rouge"
-  refute_file_contains "src/boster.dev/_layouts/post.html" "highligher-rouge"
 }
 
 @test "dependabot monitors GitHub Actions and Bundler dependencies" {

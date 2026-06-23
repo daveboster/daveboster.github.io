@@ -1,22 +1,107 @@
-theme: jekyll-theme-architect
+theme: jekyll-theme-chirpy
+
+lang: en
+timezone: America/Chicago
 
 title: Dave Boster
-email: david@boster.us
-description: How Fascinating! ＼(๏◡๏)／
+tagline: Software architect and hands-on technical collaborator
+description: >-
+  Writing and working notes from Dave Boster on software architecture,
+  delivery systems, technical collaboration, clean code, and learning.
 url: "https://boster.dev"
-twitter_username: davidboster
-github_username: daveboster
+baseurl: ""
 repository: daveboster/daveboster.github.io
 
+github:
+  username: daveboster
+
+twitter:
+  username: davidboster
+
+social:
+  name: David Boster
+  email: david@boster.us
+  fediverse_handle: "@daveboster@hachyderm.io"
+  links:
+    - https://github.com/daveboster
+    - https://www.linkedin.com/in/daveboster
+    - https://hachyderm.io/@daveboster
+    - https://stackoverflow.com/users/4387459/dave-boster
+
+avatar: "/assets/img/avatar.jpg"
+social_preview_image: "/assets/img/avatar.jpg"
+
+theme_mode:
+toc: true
+cdn:
+
+comments:
+  provider:
+
+assets:
+  self_host:
+    enabled:
+
+pwa:
+  enabled: false
+  cache:
+    enabled: false
+
 collections:
+  tabs:
+    output: true
+    sort_by: order
   thoughts:
     output: true
     permalink: /thoughts/:path/
 
-paginate: 6
-paginate_path: "/blog/page:num/"
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: ""
+      type: thoughts
+    values:
+      layout: thought
+      toc: true
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
 
-# Exclude these files from production site
+kramdown:
+  footnote_backlink: "↩︎"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+sass:
+  style: compressed
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
 exclude:
   - CHANGELOG.md
   - CNAME
@@ -25,4 +110,7 @@ exclude:
   - docs/
 
 plugins:
-  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap

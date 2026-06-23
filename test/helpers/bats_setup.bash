@@ -34,7 +34,7 @@ assert_file_contains() {
   local full_path
   full_path="$(fixture_path "$path")"
 
-  if ! grep -Fq "$expected" "$full_path"; then
+  if ! grep -Fq -- "$expected" "$full_path"; then
     echo "Expected $path to contain: $expected" >&2
     return 1
   fi
@@ -46,7 +46,7 @@ refute_file_contains() {
   local full_path
   full_path="$(fixture_path "$path")"
 
-  if grep -Fq "$unexpected" "$full_path"; then
+  if grep -Fq -- "$unexpected" "$full_path"; then
     echo "Expected $path not to contain: $unexpected" >&2
     return 1
   fi

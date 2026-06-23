@@ -1,0 +1,18 @@
+# The contact options displayed by Chirpy.
+- type: github
+  icon: "fab fa-github"
+- type: linkedin
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/daveboster"
+- type: mastodon
+  icon: "fab fa-mastodon"
+  url: "https://hachyderm.io/@daveboster"
+- type: stack-overflow
+  icon: "fab fa-stack-overflow"
+  url: "https://stackoverflow.com/users/4387459/dave-boster"
+- type: email
+  icon: "fas fa-envelope"
+  noblank: true
+- type: rss
+  icon: "fas fa-rss"
+  noblank: true
