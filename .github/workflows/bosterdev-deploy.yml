@@ -59,6 +59,7 @@ jobs:
         run: scripts/test-and-preview.sh --check-only
 
       - name: Build And Deploy
+        if: github.event_name != 'pull_request' || github.actor != 'dependabot[bot]'
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:

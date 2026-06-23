@@ -14,6 +14,10 @@ load "helpers/bats_setup.bash"
   assert_file_contains ".github/workflows/bosterdev-deploy.yml" "ruby-version: '3.2'"
 }
 
+@test "workflow skips Azure preview deployment for Dependabot pull requests" {
+  assert_file_contains ".github/workflows/bosterdev-deploy.yml" "github.actor != 'dependabot[bot]'"
+}
+
 @test "dependabot monitors GitHub Actions and Bundler dependencies" {
   assert_file_contains ".github/dependabot.yml" "package-ecosystem: \"github-actions\""
   assert_file_contains ".github/dependabot.yml" "package-ecosystem: \"bundler\""
