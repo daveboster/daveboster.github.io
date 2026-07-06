@@ -29,5 +29,3 @@ patterns, teaching material, and selected project summaries.
 <div class="project-grid">{%- assign projects = site.projects | sort: "order" -%}
 {%- for project in projects -%}{% include project-card.html project=project %}{%- endfor -%}
 </div>
-
-More public-safe examples will be added as they clear source review.
