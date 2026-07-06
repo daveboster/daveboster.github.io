@@ -2,7 +2,7 @@
 layout: thought
 title: "My Programmer's Oath"
 tags: development-management programmers-oath software-professional
-start-date: 2023-03-04 14:00:00 -0600
+date: 2023-03-04 14:00:00 -0600
 version: 1
 ---
 
