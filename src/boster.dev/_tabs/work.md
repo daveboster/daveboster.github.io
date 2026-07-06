@@ -18,6 +18,7 @@ patterns, teaching material, and selected project summaries.
 .project-card__link{position:absolute;inset:0;z-index:2}
 .project-card__link:hover{text-decoration:none}
 .project-card__thumb{width:100%!important;height:190px!important;object-fit:cover;object-position:top center;display:block;border:0;margin:0!important;border-radius:0!important}
+.project-card__thumb--contain{object-fit:contain!important;background:#fff;border-bottom:1px solid rgba(128,128,128,.15)}
 .project-card__body{display:block;padding:1rem 1.2rem 1.25rem}
 .project-card__title{display:block;font-size:1.2rem;line-height:1.2;font-weight:600;margin-bottom:.12rem}
 .project-card__subtitle{display:block;font-size:.85rem;color:var(--text-muted-color,#6b7280);margin-bottom:.55rem}
