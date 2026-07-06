@@ -24,16 +24,20 @@ thing reproducible and safe to deploy on a whim.
 **My role** · Sole designer, builder, and maintainer.
 
 - Built on Jekyll with a GitHub Actions pipeline: build, test, preview, deploy.
-- Wrote Python tooling to import Day One journal exports into structured site
-  content, turning raw field notes into publishable posts.
+- Automated the Day One import as a purpose-built **Codex agent skill**: it
+  pulls journal exports into structured posts, converts photo placeholders into
+  web image links, and guards against accidental overwrites, all through a
+  dry-run, review, apply, and verify workflow that keeps a human in the loop.
 - Added local test and preview scripts so every change is verifiable before it
   ships.
 
 **Why it's here** · It is small and personal, but it shows how I work when no
-one is watching: automate the tedium, make delivery repeatable, and treat even
-a joyful side project as a system worth maintaining.
+one is watching, and how I actually practice responsible AI-assisted
+engineering: agents automate the tedium, while a dry run, a review gate, and a
+build check keep judgment and responsibility with me.
 
-**Stack** · Jekyll · Ruby 3.2 · Python · Shell · GitHub Actions · GitHub Pages
+**Stack** · Jekyll · Ruby 3.2 · Python · Shell · GitHub Actions · GitHub Pages ·
+Codex (AI-assisted engineering)
 
 [Visit fryventures.com](https://fryventures.com) · [View on GitHub](https://github.com/daveboster/leonard)
 
