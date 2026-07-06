@@ -35,9 +35,9 @@ I took both the previous Career Path & Salary Espectations paragraphs we had and
 
 > side-note I highly recommend Uncle Bob's most recent update, Clean Code Episode 45: [The Programmer's Oath](https://cleancoders.com/episode/clean-code-episode-45).
 
-### Thought Backlog
+### Where this thought is going
 
-An outline of additional thoughts I have for this topic that may get added to this post in the future.
+A few directions I am still exploring for this topic:
 
 - Iterative process for introducing it, by facilitating discussions, learning, and reflection (encouraging skepticism and questioning).
 - Use as an individual developer to provide an employer agnostic career development guide or tool.
