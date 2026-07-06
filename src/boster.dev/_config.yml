@@ -54,6 +54,9 @@ collections:
   thoughts:
     output: true
     permalink: /thoughts/:path/
+  projects:
+    output: true
+    permalink: /work/:name/
 
 defaults:
   - scope:
@@ -69,6 +72,12 @@ defaults:
       type: thoughts
     values:
       layout: thought
+      toc: true
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: page
       toc: true
   - scope:
       path: ""

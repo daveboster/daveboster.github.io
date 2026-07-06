@@ -11,36 +11,22 @@ patterns, teaching material, and selected project summaries.
 
 ## Selected Projects
 
-### Leonard — a family storytelling site, shipped like production software
+<style>
+.project-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin:1.25rem 0 .5rem}
+.project-card{position:relative;display:flex;flex-direction:column;max-width:520px;border:1px solid rgba(128,128,128,.22);border-radius:14px;overflow:hidden;background:var(--card-bg,transparent);color:inherit;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:transform .16s ease,box-shadow .16s ease}
+.project-card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(0,0,0,.16)}
+.project-card__link{position:absolute;inset:0;z-index:2}
+.project-card__link:hover{text-decoration:none}
+.project-card__thumb{width:100%!important;height:190px!important;object-fit:cover;object-position:top center;display:block;border:0;margin:0!important;border-radius:0!important}
+.project-card__body{display:block;padding:1rem 1.2rem 1.25rem}
+.project-card__title{display:block;font-size:1.2rem;line-height:1.2;font-weight:600;margin-bottom:.12rem}
+.project-card__subtitle{display:block;font-size:.85rem;color:var(--text-muted-color,#6b7280);margin-bottom:.55rem}
+.project-card__desc{display:block;font-size:.95rem;margin-bottom:.6rem}
+.project-card__tech{display:block;font-size:.78rem;opacity:.7}
+</style>
 
-A Jekyll site where my family records adventures and memories around *Leonard*,
-an emotional-support-fry character. A personal project, held to the same
-delivery standards I bring to professional work.
-
-**The problem** · Turn scattered, real-world journaling (captured in Day One)
-into a durable, published site without manual copy-paste, and keep the whole
-thing reproducible and safe to deploy on a whim.
-
-**My role** · Sole designer, builder, and maintainer.
-
-- Built on Jekyll with a GitHub Actions pipeline: build, test, preview, deploy.
-- Automated the Day One import as a purpose-built **Codex agent skill**: it
-  pulls journal exports into structured posts, converts photo placeholders into
-  web image links, and guards against accidental overwrites, all through a
-  dry-run, review, apply, and verify workflow that keeps a human in the loop.
-- Added local test and preview scripts so every change is verifiable before it
-  ships.
-
-**Why it's here** · It is small and personal, but it shows how I work when no
-one is watching, and how I actually practice responsible AI-assisted
-engineering: agents automate the tedium, while a dry run, a review gate, and a
-build check keep judgment and responsibility with me.
-
-**Stack** · Jekyll · Ruby 3.2 · Python · Shell · GitHub Actions · GitHub Pages ·
-Codex (AI-assisted engineering)
-
-[Visit fryventures.com](https://fryventures.com) · [View on GitHub](https://github.com/daveboster/leonard)
-
----
+<div class="project-grid">{%- assign projects = site.projects | sort: "order" -%}
+{%- for project in projects -%}{% include project-card.html project=project %}{%- endfor -%}
+</div>
 
 More public-safe examples will be added as they clear source review.
