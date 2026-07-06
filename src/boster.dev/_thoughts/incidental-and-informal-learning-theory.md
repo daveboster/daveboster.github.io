@@ -6,7 +6,7 @@ date: 2022-11-22 17:30:04 -0600
 version: 1
 ---
 
-Discussing with a colleague how we have been iterating on "Tech Talks" within our development teams (future backlink should go here), I learned there's a theory for it called "Incidental and Informal Learning." For now, I've included a section below to give a brief on a tech talk.
+Discussing with a colleague how we have been iterating on "Tech Talks" within our development teams, I learned there's a theory for it called "Incidental and Informal Learning." For now, I've included a section below to give a brief on a tech talk.
 
 How fascinating! ＼(๏◡๏)／
 
@@ -14,7 +14,7 @@ How fascinating! ＼(๏◡๏)／
 
 There's an article from Emma O'Neill on LearnUpon.com that answers this question, [What is Informal Learning?](https://www.learnupon.com/blog/informal-learning/).
 
-More to come as I unpack this.
+I'm still unpacking the theory; for now, O'Neill's article above is a solid starting point.
 
 ### 'Tech Talk' Brief
 
