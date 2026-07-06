@@ -7,7 +7,8 @@ image_alt: >-
   Given-When-Then style.
 blurb: >-
   A to-do application built as a clean-code and Extreme Programming exercise:
-  test-first C# and TypeScript, unit and end-to-end tests, and CI/CD.
+  test-first C# with xUnit unit tests and TypeScript Playwright end-to-end
+  tests, all run in CI/CD.
 tech: C# · .NET · TypeScript · xUnit · Playwright · CI/CD
 order: 3
 ---
@@ -27,7 +28,8 @@ design stays simple and every change is backed by a failing-then-passing test.
 
 - A C# domain (`TaskService` and friends) grown with xUnit tests in
   Given-When-Then / Arrange-Act-Assert style.
-- A TypeScript front end with Playwright end-to-end tests.
+- Playwright end-to-end tests, written in TypeScript, that exercise real
+  user flows.
 - A GitHub Actions pipeline that runs the tests and publishes results on every
   push.
 
