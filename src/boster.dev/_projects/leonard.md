@@ -1,54 +1,55 @@
 ---
 title: Leonard
-subtitle: A family storytelling site, shipped like production software
+subtitle: Demo site for a custom Jekyll theme
 image: /assets/img/work/leonard-home.webp
 image_alt: >-
   Leonard homepage: a smiling fry character in sunglasses leaning out of a
   vintage camper on a coastal road at sunset.
 blurb: >-
-  A Jekyll family site with a Codex-powered Day One import pipeline and full
-  CI/CD, treated like production software.
-tech: Jekyll · Ruby · Python · Codex · GitHub Actions
+  fryventures.com is the live example site for newfire_theme, a custom Jekyll
+  theme I designed and built with an agentic design-and-coding workflow, wrapped
+  around a character world I make with my family.
+tech: Jekyll · Ruby · Custom theme · Agentic engineering · CI/CD
 order: 1
 ---
 
 {% include site-shot.html src=page.image alt=page.image_alt url="fryventures.com" caption="The Leonard homepage, live at <a href='https://fryventures.com'>fryventures.com</a>." %}
 
-Leonard is a Jekyll site where my family records adventures and memories around
-*Leonard*, an emotional-support-fry character. It is a personal project, and a
-place I hold to the same delivery standards I bring to professional work.
+fryventures.com is the live example site for **newfire_theme**, a custom Jekyll
+theme I designed and built. It doubles as a character storytelling world I make
+with my family, which makes it a real, deployed proof that the theme holds up in
+the wild rather than a throwaway demo page.
 
-## The problem
+## The goal
 
-Turn scattered, real-world journaling (captured in the Day One app) into a
-durable, published site without manual copy-paste, and keep the whole thing
-reproducible and safe to deploy on a whim.
+Build a reusable, self-contained Jekyll theme, and prove it with a living site
+instead of a static demo.
 
 ## What I built
 
-- A Jekyll site with a GitHub Actions pipeline: build, test, preview, deploy.
-- A purpose-built **Codex agent skill** that imports Day One journal exports into
-  structured posts. It converts Day One photo placeholders into web image links,
-  detects title mismatches to guard against accidental overwrites, and applies
-  conservative banner-image rules.
-- Local test and preview scripts so every change is verifiable before it ships.
+- **newfire_theme** — a custom Jekyll theme: layouts, includes, styling,
+  navigation, and configuration designed to be reused across sites.
+- The example site itself, fryventures.com, as the theme's real-world showcase.
+- A GitHub Actions pipeline: build, test, preview, deploy.
 
-## Responsible AI-assisted engineering
+## Designed and coded with agents
 
-The import skill is a working example of how I use AI-assisted engineering: an
-agent handles the tedium, but the workflow keeps a human in the loop at every
-step, `dry-run → review → apply → verify`. Judgment, verification, and
-responsibility stay with me. This is the same practice described on the
-[Practices]({{ '/practices/' | relative_url }}) page, applied to a real project.
+I built the theme and the site using an agentic design-and-coding workflow:
+agents accelerate design and implementation, while I keep judgment, review, and
+verification in my own hands. It is the same responsible AI-assisted engineering
+described on the [Practices]({{ '/practices/' | relative_url }}) page, applied
+end to end on a real project.
 
-## Why it belongs here
+## Details
 
-It is small and personal, but it shows how I work when no one is watching:
-automate the tedium, make delivery repeatable, and treat even a joyful side
-project as a system worth maintaining.
+- A small Codex skill imports Day One journal entries into field-note posts
+  through a `dry-run → review → apply → verify` flow, so automation never writes
+  unreviewed changes.
+- The theme keeps content, layout, and styling cleanly separated, so posts,
+  pages, and navigation stay simple to maintain.
 
-**Stack** · Jekyll · Ruby 3.2 · Python · Shell · GitHub Actions · GitHub Pages ·
-Codex (AI-assisted engineering)
+**Stack** · Jekyll · Ruby 3.2 · Custom theme (newfire_theme) · Agentic
+engineering · GitHub Actions · GitHub Pages
 
 [Visit fryventures.com](https://fryventures.com) · [View the code on GitHub](https://github.com/daveboster/leonard)
 
