@@ -52,7 +52,7 @@ jobs:
           ruby-version: '3.2' # Not needed with a .ruby-version file
 
       - name: Set up BATS
-        uses: bats-core/bats-action@4.0.0
+        uses: bats-core/bats-action@4.1.0
 
       - name: Verify site
         working-directory: ${{ github.workspace }}
